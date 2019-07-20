@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh root@67.207.86.250 <<EOF
+ cd ~/jenkins_api_test
+ git pull
+ npm install --production
+ pm2 restart all
+ exit
+EOF
