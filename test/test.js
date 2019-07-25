@@ -10,10 +10,10 @@ describe('get /', () => {
 
 describe('post /', () => {
     body = {
-        "num1": 1,
-        "num2": 3
+        "num1": 2,
+        "num2": 2
     }
-    it('respond with hello there', (done) => {
+    it('respond suma: 4', (done) => {
         request(app).post('/')
         .send(body)
         .expect('suma: 4', done);
